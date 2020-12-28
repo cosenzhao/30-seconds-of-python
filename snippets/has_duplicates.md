@@ -3,9 +3,9 @@ title: has_duplicates
 tags: list,beginner
 ---
 
-Returns `True` if there are duplicate values in a flast list, `False` otherwise.
+Checks if there are duplicate values in a flat list.
 
-Use `set()` on the given list to remove duplicates, compare its length with the length of the list.
+- Use `set()` on the given list to remove duplicates, compare its length with the length of the list.
 
 ```py
 def has_duplicates(lst):
@@ -13,8 +13,8 @@ def has_duplicates(lst):
 ```
 
 ```py
-x = [1,2,3,4,5,5]
-y = [1,2,3,4,5]
+x = [1, 2, 3, 4, 5, 5]
+y = [1, 2, 3, 4, 5]
 has_duplicates(x) # True
 has_duplicates(y) # False
 ```

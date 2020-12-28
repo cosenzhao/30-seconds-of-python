@@ -3,13 +3,16 @@ title: filter_unique
 tags: list,beginner
 ---
 
-Filters out the unique values in a list.
+Creates a list with the unique values filtered out.
 
-Use list comprehension and `list.count()` to create a list containing only the non-unique values.
+- Use `collections.Counter` to get the count of each value in the list.
+- Use a list comprehension to create a list containing only the non-unique values.
 
 ```py
+from collections import Counter
+
 def filter_unique(lst):
-  return [x for x in set(item for item in lst if lst.count(item) > 1)]
+  return [item for item, count in Counter(lst).items() if count > 1]
 ```
 
 ```py

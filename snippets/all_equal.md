@@ -3,13 +3,13 @@ title: all_equal
 tags: list,beginner
 ---
 
-Check if all elements in a list are equal.
+Checks if all elements in a list are equal.
 
-Use `[1:]` and `[:-1]` to compare all the values in the given list.
+- Use `set()` to eliminate duplicate elements and then use `len()` to check if length is `1`.
 
 ```py
 def all_equal(lst):
-  return lst[1:] == lst[:-1]
+  return len(set(lst)) == 1
 ```
 
 ```py
